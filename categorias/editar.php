@@ -6,7 +6,7 @@
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        $squl = "SELECT * FROM categorias WHERE id = :id";
+        $sql = "SELECT * FROM categorias WHERE id = :id";
         $sql = $db->prepare($sql);
         $sql->bindValue(":id", $id);
         $sql->execute();
@@ -36,20 +36,23 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="./css/estilo.css"/>
+    <link rel="stylesheet" href="<?php echo $url?>/css/estilo.css"/>
 
 </head>
 <body>
     <div class="container fundo">
         <?php require_once "../menu.php"; ?>
 
+
+
         <div class="fundo conteudo">
             <div class="container">
                 <fieldset>
                     <legend>Editar categoria</legend>
-                    <form method="POST" action="">
+                    <form method="POST" action="salvar.php">
                         <label for="">Nome da Categoria</labe>
-                        <input type="text" name="nome" class="form-control" /><br/>
+                        <input type="text" name="nome" class="form-control" value="<?php echo $categoria['nome'] ?>" /><br/>
+                        <input type="hidden" name="id" class="form-control" value="<?php echo $id ?>" /><br/>
                         <button class="btn btn-sucsess">Salvar</button>
                     </form>
                 </fieldset>

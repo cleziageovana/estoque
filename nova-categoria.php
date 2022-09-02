@@ -70,7 +70,7 @@ if (count($_POST) > 0){
                                     <td><?php echo $categoria['id'] ?></td>
                                     <td><?php echo $categoria['nome'] ?></td>
                                 <td>
-                                    <a href="./categorias/editar.php?id<?php echo $categoria['id'] ?>" class="btn btn-warning">Editar</a>
+                                    <a href="./categorias/editar.php?id=<?php echo $categoria['id'] ?>" class="btn btn-warning">Editar</a>
                                 </td>
                                 </tr>
                             <?php endforeach; ?>
