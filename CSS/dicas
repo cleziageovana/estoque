@@ -1,0 +1,57 @@
+
+<link rel="stulesheet" href="./css/esttilo.css" />
+
+<div class="container fundo">
+    <div class="fundo-menu">ÁREA DO MENU</div>
+    <div class="fundo-conteudo">ÁREA DO CONTEÚDO</div>
+</div>
+
+
+
+<fieldset>
+    <legend>Lista de Usuarios do Sistema
+<a href= "novo-usuario.php" class="btn btn-warning">Novo Usuario</a>
+<table class="table table-success table-striped">
+    <thead>
+        <th>#ID</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Senha</th>
+        <th>Data_Criacao</th>
+        <th>Usuario</th>
+    </thead>
+    <tbody> 
+        <?php foreach($dados as $dado): ?>
+            <tr>
+                <td><?php echo $dado['id'] ?></td>
+                <td><?php echo $dado['nome'] ?></td>
+                <td><?php echo $dado['sobrenome'] ?></td>
+                <td><?php echo $dado['senha'] ?></td>
+                <td><?php echo $dado['data_criacao'] ?></td>
+                <td><?php echo $dado['usuario'] ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+    </table>
+
+
+    * FETCH -> TRAZ SOMENBTE UM REGISTRO
+    * FETCHALL -> TRAZ VARIOS REGISTROS
+    * LIKE ->
+
+
+
+
+
+    Procurar incones:
+    https://www.svgrepo.com/vectors/search/8 
+    https://stock.adobe.com/br/search?load_type=search&is_recent_search=&search_type=usertyped&k=computador&native_visual_search=&similar_content_id=
+
+    file:///C:/wamp/www/LUCAS/arquivomorto/IMAGENS/search%20(2).svg (PESQUISA)
+
+
+    CRUD -. CREATE - READ - UPDATE - DELETE
+
+    - VERIFICAR SE USUÁRIO
+    - DEIXAR OPERAÇÕES MAIS SEGURAS
+    - FAZER BUSCAS OU CONSULTAS  (Consulta faz com o Select)

@@ -1,0 +1,77 @@
+/* thead{
+    background-color: aqua;
+}
+
+tr{
+    border: 20px;
+    display: 50px;
+} */
+
+body {
+    background-color: #D9D9D9 !important;
+    padding: 80px;
+}
+
+.fundo{
+    background-color: white;
+    height: 80vh;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.fundo-menu{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    background-color: #D9D9D9;  
+    align-items: center; 
+}
+
+.fundo-conteudo{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.botao-menu{
+    width: 100px;
+    height: 60px;
+    background-color: coral;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.botao-menu:hover{
+    transform: scale(1.1   );
+    opacity: 0.9;
+}
+
+
+
+.botao-menu img {
+    width:40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mensagem-bem-vindo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.tituloderegistro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
