@@ -78,13 +78,16 @@ $dados = $sql->fetchAll(); //pega todos os resultados da consulta
                     <td>
                             <a href="excluir.php?id=<?php echo $dado['id'] ?>" class="btn btn-danger">Excluir</a>
                             <a href="editar.php?id=<?php echo $dado['id'] ?>" class="btn btn-warning">Editar</a>
+                            
                     </td>
                 <?php endforeach; ?>
             </tbody>
 
         </table>
         
+        
     </div>  
+    <a href="./registros.php" class="btn btn-warning">Voltar</a>
 </div> 
 </body>
 </html>

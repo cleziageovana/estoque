@@ -55,8 +55,9 @@ if (count($_POST) > 0){
                 <input type="date" class="form-control" name="data_validade"/>
                 <label>quantidade</label>
                 <input type="password" class="form-control" name="quantidade"/>
-                <br/><a href="index.php" class="btn btn-warning">Voltar</a>
+                <br/>
                 <button type="submit" class="btn btn-primary"> salvar</button>
+                <a href="./registros.php" class="btn btn-warning">Voltar</a>
             </form>
         </fieldset>
     </div>

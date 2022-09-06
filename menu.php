@@ -19,4 +19,16 @@
             </div>
         </a>
 
+        <a href="registros.php" >
+            <div class="botao-menu">
+                <img src="<?php echo $url ?>IMAGENS/registro-online.png" src=""/>
+            </div>
+        </a>
+
+        <a href="novo-produto.php" >
+            <div class="botao-menu">
+                <img src="<?php echo $url ?>IMAGENS/novo-produto.png" src=""/>
+            </div>
+        </a>
+
     </div>

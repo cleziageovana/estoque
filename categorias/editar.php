@@ -53,6 +53,7 @@
                         <label for="">Nome da Categoria</labe>
                         <input type="text" name="nome" class="form-control" value="<?php echo $categoria['nome'] ?>" /><br/>
                         <input type="hidden" name="id" class="form-control" value="<?php echo $id ?>" /><br/>
+                        <a href="../nova-categoria.php" class="btn btn-warning">Voltar</a>
                         <button class="btn btn-sucsess">Salvar</button>
                     </form>
                 </fieldset>

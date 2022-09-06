@@ -66,7 +66,7 @@ if ($_POST){
                 <input type="text" class="form-control" name="usuario" value="<?php echo $informacoes['usuario'] ?>"/>
                 <label>Senha</label>
                 <input type="password" class="form-control" name="senha" value="<?php echo $informacoes['senha'] ?>"/>
-                <br/><a href="registros.php" class="btn btn-warning">Voltar</a>
+                <a href="registros.php" class="btn btn-warning">Voltar</a>
                 <button type="submit" class="btn btn-primary"> salvar</button>
             </form>
         </fieldset>
